@@ -19,7 +19,7 @@ code = "https://github.com/binwiederhier/ntfy"
 fund = "https://liberapay.com/ntfy"
 
 [integration]
-yunohost = ">= 11.1.17"
+yunohost = ">= 11.2"
 architectures = ["amd64", "arm64", "armhf"]
 multi_instance = true
 ldap = false
@@ -44,12 +44,12 @@ ram.runtime = "50M"
 
         [resources.sources.main]
 
-        amd64.url = "https://github.com/binwiederhier/ntfy/releases/download/v2.3.1/ntfy_2.3.1_linux_x86_64.tar.gz"
-        amd64.sha256 = "2045a1281b352d7293fe3a5a436aae56debd72ec662dd380908c4a35ad9aa9d3"
-        arm64.url = "https://github.com/binwiederhier/ntfy/releases/download/v2.3.1/ntfy_2.3.1_linux_arm64.tar.gz"
-        arm64.sha256 = "85cdf786d6debff23cb1c32a41ed6f1fc9338f48dfcdcd7d24ab3ca242d8a6af"
-        armhf.url = "https://github.com/binwiederhier/ntfy/releases/download/v2.3.1/ntfy_2.3.1_linux_armv7.tar.gz"
-        armhf.sha256 = "8e6080e921cac5f6985237fc58ca6b0bc2b42d9ae7240c3e1a4d986b998cb2c4"
+        amd64.url = "https://github.com/binwiederhier/ntfy/releases/download/v2.7.0/ntfy_2.7.0_linux_amd64.tar.gz"
+        amd64.sha256 = "2218bea3204348700034cff652437e317b8ed2466aa58d8b2444b41b68eaf5e2"
+        arm64.url = "https://github.com/binwiederhier/ntfy/releases/download/v2.7.0/ntfy_2.7.0_linux_arm64.tar.gz"
+        arm64.sha256 = "1e0e1bc4183e3ffecbe8d8b1b91b5df8965d907968588c19b7a591719bd146fb"
+        armhf.url = "https://github.com/binwiederhier/ntfy/releases/download/v2.7.0/ntfy_2.7.0_linux_armv7.tar.gz"
+        armhf.sha256 = "84981fe6f4234fb8e6429b0c6cbe7090bab1f773e1994b42237c40c244cdd326"
 
         autoupdate.strategy = "latest_github_release"
         autoupdate.asset.amd64 = ".*_linux_x86_64.tar.gz"
