@@ -40,6 +40,23 @@ ram.runtime = "50M"
     type = "password"
 
 [resources]
+
+    [resources.sources]
+
+        [resources.sources.main]
+
+        amd64.url = "https://github.com/binwiederhier/ntfy/releases/download/v2.3.1/ntfy_2.3.1_linux_x86_64.tar.gz"
+        amd64.sha256 = "2045a1281b352d7293fe3a5a436aae56debd72ec662dd380908c4a35ad9aa9d3"
+        arm64.url = "https://github.com/binwiederhier/ntfy/releases/download/v2.3.1/ntfy_2.3.1_linux_arm64.tar.gz"
+        arm64.sha256 = "85cdf786d6debff23cb1c32a41ed6f1fc9338f48dfcdcd7d24ab3ca242d8a6af"
+        armhf.url = "https://github.com/binwiederhier/ntfy/releases/download/v2.3.1/ntfy_2.3.1_linux_armv7.tar.gz"
+        armhf.sha256 = "8e6080e921cac5f6985237fc58ca6b0bc2b42d9ae7240c3e1a4d986b998cb2c4"
+
+        autoupdate.strategy = "latest_github_release"
+        autoupdate.asset.amd64 = ".*_linux_x86_64.tar.gz"
+        autoupdate.asset.arm64 = ".*_linux_arm64.tar.gz"
+        autoupdate.asset.armhf = "*_linux_armv7.tar.gz"
+
     [resources.system_user]
 
     [resources.install_dir]
